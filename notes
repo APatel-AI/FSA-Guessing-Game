@@ -1,0 +1,49 @@
+// // guess input text area
+// const guessInput = document.querySelector('#guessInput');
+
+// //submit guess Input button
+// const submitInput = document.getElementById("submitInput")
+
+// //create var for parseINT guess int value 
+
+// //gett the h1 element
+// let h1 = document.querySelector('h1')
+
+// //create variable that generates random numbes 1- 100
+// const randomNumber = Math.floor(Math.random() * 100) + 1;
+
+
+// let counter = 5;
+
+// submitInput.addEventListener('click', function(){
+//     console.log("My guess is: ", guessInput.value)
+//     console.log("Random Number is: " , randomNumber)
+//     // console.log("The sum is", parseInt(guessInput.value)  + 10)
+
+//     //if guess is right return you win
+//     if(parseInt(guessInput.value) === randomNumber){
+//         return h1.textContent = "You Win"
+//     }
+    
+//     //if guessInput is within 10 numbers return your warm
+//     else{
+
+//         //if guess + 10 <= random number && guess is >= guess  (in range of 10)
+//         // if(parseInt(guessInput.value) + 10 <= randomNumber && parseInt(guessInput.value) >= parseInt(guessInput.value) ){
+        
+//         const proximity = Math.abs(parseInt(guessInput.value) - randomNumber)
+//         const conditions = parseInt(guessInput.value) > randomNumber ? "Lower" : "Higher"; 
+        
+//         h1.textContent = `wrong, try guessing ${conditions}You're within ${proximity}` 
+
+//     }
+// }
+
+// )
+
+
+
+
+
+
+
