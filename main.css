@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+}
+
+#guessingContainer {
+    padding: 100px;
+    background-color: darkseagreen;
+    margin: 20%;
+    width: 500px;
+    /* margin-left: 20%; */
+    /* margin-right: ; */
+}
+
+h1{ 
+    font-size: 50px;
+    text-align: center;
+}
+
+#submitContainer {
+    display: inline;
+    justify-content: center;
+    width: 90%;
+    
+}
+
+#guessInput {
+    text-align: center;
+    font-weight: bold;
+    font-size: larger;
+    border-radius: 45%;
+    height: 50px;
+    border: none;
+
+}
+
+#submitInput {
+    border-radius: 50%;
+    border: dotted white 2px;
+    height: 100px;
+    background-color: gray;
+    color: white;
+}
+
+span {
+    color:white;
+}
