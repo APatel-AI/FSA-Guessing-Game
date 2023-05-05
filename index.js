@@ -3,6 +3,8 @@ const guessInput = document.querySelector('#guessInput');
 //submit guess Input button
 const submitInput = document.getElementById("submitInput")
 
+const resetInput = document.getElementById("resetButton")
+
 //create var for parseINT guess int value 
 
 //gett the h1 element
@@ -26,6 +28,7 @@ submitInput.addEventListener('click', function(){
         return h1.textContent = "You Win"
     }else if (counter === 0){
         h1.textContent="You Lose :("
+        endGame()
     }
     
     //if guessInput is within 10 numbers return your warm
@@ -50,6 +53,26 @@ submitInput.addEventListener('click', function(){
 }}
 
 )
+
+resetInput.addEventListener('click', resetGame)
+
+
+// ----------------- Functions -----------------
+
+function endGame(){
+    guessInput.disabled  = true; 
+    submitInput.disabled = true;
+
+
+}
+
+
+function resetGame(){
+    h1.textContent = "Guessing Game"
+    counter = 5; 
+    guessInput.disabled = false; 
+    submitInput.disabled = false; 
+}
 
 // const conditions = parseInt(guessInput.value) > randomNumber ? "Lower" : "Higher"; 
         
